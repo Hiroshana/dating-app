@@ -39,7 +39,7 @@ const LoginForm = () => {
               variant="bordered"
               {...register("email")}
               isInvalid={!!errors.email}
-              errorMessage={errors.email?.message as string}
+              errorMessage={errors.email?.message}
             />
             <Input
               label="Password"
@@ -47,7 +47,7 @@ const LoginForm = () => {
               type="password"
               {...register("password")}
               isInvalid={!!errors.password}
-              errorMessage={errors.password?.message as string}
+              errorMessage={errors.password?.message}
             />
             <Button
               isDisabled={!isValid}
